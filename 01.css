@@ -1,0 +1,132 @@
+*{margin: 0; padding: 0;}
+html, body{
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+.phanslide {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    position: absolute;
+    z-index: 1;
+}
+.phanslide ul {
+    height: 100%;
+    position: relative;
+}
+.phanslide ul li {
+    transition: 1s;
+    opacity: 0;
+    list-style: none;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.phanslide ul li.active {
+    transition: 1s;
+    opacity: 1;
+}
+.phanslide ul li .motslide {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+}
+.phanslide ul li .motslide.hienthi{
+}
+.motslide .anh,
+.motslide .nauduoi1,
+.motslide .nauduoi2,
+.motslide .nautren,
+.motslide .textnoidung{
+    position: absolute;
+    opacity: 0;
+}
+
+.motslide .textnoidung {
+    opacity: 1;
+    top: 30%;
+    color: white;
+    left: 7%;
+    width: 18%;
+}
+
+.motslide .nautren {
+    opacity: 1;
+    right: 0;
+}
+
+.motslide .nauduoi2 {
+    opacity: 0.6;
+    top: -33%;
+}
+.textnoidung h2{
+    font-size: 43px;
+    font-family: segoe ui light;
+    padding-bottom: 20px;
+}
+.textnoidung h3{
+    font-size: 31px;
+    padding-bottom: 20px;
+}
+.textnoidung .ke{
+    width: 30%;
+    margin-bottom: 20px;
+    height: 4px;
+    background: white;
+}
+.textnoidung p{
+    font-size: 20px;
+}
+.textnoidung a{
+    border: 2px solid white;
+    display: inline-block;
+    margin-top: 20px;
+    padding: 13px 38px;
+    text-decoration: none;
+    color: white;
+}
+/*Xu ly phan full man hinh*/
+.motslide .anh{
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    opacity: 1;
+}
+
+.motslide .nauduoi1 {
+    opacity: 0.7;
+    top: -67%;
+}
+.thslide {
+    position: absolute;
+    margin-left: 50%;
+    z-index: 3;
+    transform: translateX(-50%);
+    bottom: 0;
+}
+
+.thslide ul li {
+    display: inline-block;
+    text-indent: -9999px;
+    border: 1px solid black;
+    width: 20px;
+    height: 20px;
+    margin: 17px 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.thslide ul li:hover {
+    background: black;
+}
+.thslide ul li.macdinh {
+    background: black;
+}
+
+.thslide ul {
+    display: inline;
+}
